@@ -3,9 +3,9 @@ import React from 'react'
 
 const AddToCart = () => {
   return (
-    <div>
-        <button onClick={() => console.log('Button Clicked')}>Click</button>
-    </div>
+    <>
+      <button className="button" onClick={() => alert('Button Clicked')}>Click</button>
+    </>
   )
 }
 

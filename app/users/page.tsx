@@ -11,15 +11,15 @@ const UsersPage = async () => {
   const users: User[] = await res.json()
 
   return (
-    <>
-      <h1>Users</h1>
-      <ul>
+    <main>
+      <h1 className="title">Users</h1>
+      <ul className="users-list">
         {users.map(user => 
             <li key={user.id}>{user.name}</li>
           )}
       </ul>
-      <Link href="/">Back Home</Link>
-    </>
+      <Link href="/" className="button">Back Home</Link>
+    </main>
   )
 }
 

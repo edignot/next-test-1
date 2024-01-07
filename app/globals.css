@@ -3,74 +3,66 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
-  }
 }
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+            to bottom,
+            transparent,
+            rgb(var(--background-end-rgb))
+        )
+        rgb(var(--background-start-rgb));
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .title {
-  font-size: 3rem;
-  background: linear-gradient(45deg, #ff0000, #ffff00);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    background: linear-gradient(45deg, #ff0000, #ffff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .button {
-  background: linear-gradient(45deg, #ff0000, #ffff00);
-  color: #000;
-  padding: 5px 10px;
-  margin: 10px;
-  border: 1px solid #ff0000;
-  border-radius: 5px;
-  box-shadow: none;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+    background: linear-gradient(45deg, #ff0000, #ffff00);
+    color: #000;
+    padding: 5px 10px;
+    margin: 10px;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    box-shadow: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .button:hover {
-  background: linear-gradient(45deg, #ff0000, #ffff33);
+    background: linear-gradient(45deg, #ff0000, #ffff33);
 }
 
 .users-list {
-  display: table;
-  border-collapse: collapse;
-  border: 1px solid #717171;
+    display: table;
+    border-collapse: collapse;
+    border: 1px solid #717171;
 }
 
 .users-list li {
-  display: table-row;
-  border-bottom: 1px solid #717171;
+    display: table-row;
+    border-bottom: 1px solid #717171;
 }
 
 .users-list li:last-child {
-  border-bottom: none;
+    border-bottom: none;
 }
